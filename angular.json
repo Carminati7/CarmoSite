@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "avigliana-mtg": {
+    "CarmoSite": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/avigliana-mtg",
+            "outputPath": "dist/CarmoSite",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "avigliana-mtg:build"
+            "browserTarget": "CarmoSite:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "avigliana-mtg:build:production"
+              "browserTarget": "CarmoSite:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "avigliana-mtg:build"
+            "browserTarget": "CarmoSite:build"
           }
         },
         "test": {
@@ -115,16 +115,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "avigliana-mtg:serve"
+            "devServerTarget": "CarmoSite:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "avigliana-mtg:serve:production"
+              "devServerTarget": "CarmoSite:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "avigliana-mtg",
+  "defaultProject": "CarmoSite",
 }
