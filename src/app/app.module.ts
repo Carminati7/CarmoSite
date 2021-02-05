@@ -16,8 +16,8 @@ import { ScullyLibModule } from '@scullyio/ng-lib-v8';
   imports: [
     BrowserModule,
     AppRoutingModule,
-     HttpClientModule,
-     ScullyLibModule,
+    HttpClientModule,
+    ScullyLibModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
