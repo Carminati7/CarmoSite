@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { GifRandomizerComponent } from './gif-randomizer/gif-randomizer.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GifRandomizerComponent } from './gif-randomizer/gif-randomizer.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
