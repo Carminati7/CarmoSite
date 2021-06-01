@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 
 import { GifRandomizerComponent } from './gif-randomizer/gif-randomizer.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
+import { PosterComponent } from './poster/poster.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GifRandomizerComponent
+    GifRandomizerComponent,
+    PosterComponent
   ],
   imports: [
     BrowserModule,
