@@ -3,6 +3,11 @@
   margin-top: 5vh;
   padding-top: 5px;
   padding-bottom: 5px;
+  color: #341809;
+  font-family: Odibee Sans;
+  text-align: center;
+  font-size: 70px;
+  line-height: 20vh;
 }
 
 .firstpage {
@@ -18,6 +23,23 @@
 .container {
   width: 80vw;
   margin-left: 10vw;
+}
+
+.secondpage1 {
+  background-color: #FE2712;
+  background-image: linear-gradient(#FE2712, #EA202C);
+}
+.secondpage2 {
+  background-color: #EA202C;
+  background-image: linear-gradient(#EA202C, #D61A46);
+}
+.secondpage3 {
+  background-color: #D61A46;
+  background-image: linear-gradient(#D61A46, #C21460);
+}
+.secondpage4 {
+  background-color: #C21460;
+  background-image: linear-gradient(#C21460, #AE0D7A);
 }
 
 @media screen and (max-width: 600px) {
