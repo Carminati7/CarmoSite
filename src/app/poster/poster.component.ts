@@ -16,9 +16,9 @@ export class PosterComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     $('#poster')['turn']({
-  		width: 400,
-  		height: 300,
-  		autoCenter: true
+      acceleration: true,
+  		autoCenter: true,
+      display: 'single'
   	});
   }
 
