@@ -6,6 +6,8 @@ import {
   HostListener
 } from '@angular/core';
 
+declare var $: any;
+
 @Component({
   selector: 'app-poster',
   templateUrl: './poster.component.html',
@@ -33,14 +35,14 @@ export class PosterComponent implements OnInit, AfterViewInit {
 
   adjustSize( name ) {
     if ( window.innerWidth < 600) {
-      $('#' + name )['turn']("size",'88vw','20vh');
+      $('#' + name ).turn("size",'88vw','20vh');
     } else {
-      $('#' + name)['turn']("size",'70vw ','20vh');
+      $('#' + name).turn("size",'70vw ','20vh');
     }
   }
 
   initPoster( name: string ) {
-    $('#'+name)['turn']({
+    $('#'+name).turn({
       acceleration: true,
       autoCenter: true,
       display: 'single'
