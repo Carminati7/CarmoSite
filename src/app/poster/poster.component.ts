@@ -34,6 +34,9 @@ export class PosterComponent implements OnInit, AfterViewInit {
   }
 
   adjustSize( name ) {
+    if (!("propertyName" in $('#'+name))) {
+      return
+    }
     if ( window.innerWidth < 600) {
       $('#' + name ).turn("size",'88vw','20vh');
     } else {
@@ -42,6 +45,9 @@ export class PosterComponent implements OnInit, AfterViewInit {
   }
 
   initPoster( name: string ) {
+    if (!("propertyName" in $('#'+name))) {
+      return
+    }
     $('#'+name).turn({
       acceleration: true,
       autoCenter: true,

@@ -6,11 +6,13 @@
       "jasmine",
       "node",
       "jquery"
-    ]
+    ],
+    "allowJs":true
   },
   "files": [
     "src/test.ts",
     "src/polyfills.ts",
+    "src/assets/lib/turn.min.js"
   ],
   "include": [
     "src/**/*.spec.ts",

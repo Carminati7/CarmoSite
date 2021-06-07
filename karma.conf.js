@@ -16,8 +16,8 @@ module.exports = function (config) {
       require('karma-firefox-launcher'),
     ],
     files:[
-      {pattern: '"./src/assets/lib/turn.min.js"', included: true},
-      {pattern: './node_modules/jquery/dist/jquery.min.js', included: true},
+      {pattern: './src/assets/lib/turn.min.js', included: true, type:'js'},
+      {pattern: './node_modules/jquery/dist/jquery.min.js', included: true, type:'js'},
     ],
     client: {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
@@ -32,7 +32,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Firefox','Chrome'],
+    browsers: ['Firefox'],
     singleRun: false,
     restartOnFileChange: true
   });
