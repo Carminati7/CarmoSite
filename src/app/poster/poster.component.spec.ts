@@ -22,4 +22,16 @@ describe('PosterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should create', () => {
+    expect(component).toBeDefined();
+  });
+
+  it('should create a div', () => {
+    const element: HTMLElement = fixture.nativeElement;
+    const div = element.querySelector('div')!;
+    console.log('div: ', div)
+    expect(div).toBeDefined();
+  });
+
 });
